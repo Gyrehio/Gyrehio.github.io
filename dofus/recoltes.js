@@ -2,12 +2,12 @@ var ressourcesPaysan = ["Blé","Orge","Avoine","Houblon","Lin","Seigle","Riz","M
 var minLevelsPaysan = [0, 20, 40, 60, 80, 100, 100, 120, 140, 160, 180, 200, 200];
 var ressourcesAlchimiste = ["Ortie","Sauge","Trèfle à 5 feuilles","Menthe Sauvage","Orchidée Freyesque","Edelweiss","Graine de Pandouille","Ginseng","Belladone","Mandragore","Perce-Neige","Salikrone","Tulipe en Papier"];
 var minLevelsAlchimiste = [0, 20, 40, 60, 80, 100, 120, 140, 160, 180, 200, 200];
-var ressourcesPecheur = ["Goujon","Greuvette","Truite","Crabe Sourimi","Poisson-Chaton","Poisson Pané","Carpe d'Iem","Sardine Brillante","Brochet","Kralamoure","Anguille","Dorade Grise","Perche","Raie Bleue","Lotte","Requin Marteau-Faucille","Bar Rikain","Morue","Tanche","Espadon","Pichon d'Encre","Patelle","Poiskaille"];
+var ressourcesPecheur = ["Goujon","Greuvette","Truite","Crabe Sourimi","Poisson-Chaton","Poisson Pané","Carpe d'Iem","Sardine Brillante","Brochet","Kralamoure","Anguille","Dorade Grise","Perche","Raie Bleue","Lotte","Requin Marteau-Faucille","Bar Rikain","Morue","Tanche","Espadon","Poiskaille","Patelle","Pichon d'encre"];
 var minLevelsPecheur = [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150, 160, 170, 180, 190, 200, 200, 200];
 var ressourcesBucheron = ["Frêne","Chataîgnier","Noyer","Chêne","Bombu","Érable","Pin","Oliviolet","If","Bambou","Merisier","Noisetier","Ébène","Kalyptus","Charme","Bambou Sombre","Orme","Bambou Sacré","Tremble","Aquajou"];
 var minLevelsBucheron = [0, 20, 40, 60, 70, 80, 90, 90, 100, 110, 120, 130, 140, 150, 160, 170, 180, 190, 200, 200];
-var ressourcesMineur = ["Fer","Cuivre","Bronze","Kobalte","Manganèse","Étain","Silicate","Argent","Bauxite","Or","Dolomite","Cendrepierre","Obsidienne","Ardonite"];
-var minLevelsMineur = [0, 20, 40, 60, 80, 100, 100, 120, 140, 160, 180, 180, 200, 200];
+var ressourcesMineur = ["Fer","Cuivre","Bronze","Kobalte","Manganèse","Étain","Silicate","Argent","Bauxite","Or","Dolomite","Cendrepierre","Obsidienne","Écume de mer","Cristal pliable","Cristal liquide"];
+var minLevelsMineur = [0, 20, 40, 60, 80, 100, 100, 120, 140, 160, 180, 180, 200, 200, 200, 200];
 
 var jobs = document.querySelector("#metiers");
 var level = document.querySelector("#niveau");
@@ -63,7 +63,7 @@ jobs.addEventListener("change", function() {
                     // MINIMUM
                     let td2 = document.createElement("td");
                     let niveauMin = minLevelsPaysan[i];
-                    if (niveau - niveauMin == 0 && niveau === 200) {
+                    if (niveau - niveauMin == 0 && niveau == 200) {
                         td2.innerText = 1;
                     } else if (niveau < 30) {
                         td2.innerText = 1;
@@ -83,7 +83,7 @@ jobs.addEventListener("change", function() {
                     tr.appendChild(td2);
                     // MAXIMUM
                     let td3 = document.createElement("td");
-                    if (niveau - niveauMin == 0 && niveau === 200) {
+                    if (niveau - niveauMin == 0 && niveau == 200) {
                         td3.innerText = 1
                     } else if (niveau - niveauMin < 10) {
                         td3.innerText = 7;
@@ -195,7 +195,7 @@ jobs.addEventListener("change", function() {
                         // MINIMUM
                         let td2 = document.createElement("td");
                         let niveauMin = minLevelsAlchimiste[i];
-                        if (niveau - niveauMin == 0 && niveau === 200) {
+                        if (niveau - niveauMin == 0 && niveau == 200) {
                             td2.innerText = 1;
                         } else if (niveau < 30) {
                             td2.innerText = 1;
@@ -215,7 +215,7 @@ jobs.addEventListener("change", function() {
                         tr.appendChild(td2);
                         // MAXIMUM
                         let td3 = document.createElement("td");
-                        if (niveau - niveauMin == 0 && niveau === 200) {
+                        if (niveau - niveauMin == 0 && niveau == 200) {
                             td3.innerText = 1
                         } else if (niveau - niveauMin < 10) {
                             td3.innerText = 7;
@@ -326,7 +326,7 @@ jobs.addEventListener("change", function() {
                         // MINIMUM
                         let td2 = document.createElement("td");
                         let niveauMin = minLevelsPecheur[i];
-                        if (niveau - niveauMin == 0 && niveau === 200) {
+                        if (niveau - niveauMin == 0 && niveau == 200) {
                             td2.innerText = 1;
                         } else if (niveau < 30) {
                             td2.innerText = 1;
@@ -346,7 +346,7 @@ jobs.addEventListener("change", function() {
                         tr.appendChild(td2);
                         // MAXIMUM
                         let td3 = document.createElement("td");
-                        if (niveau - niveauMin == 0 && niveau === 200) {
+                        if (niveau - niveauMin == 0 && niveau == 200) {
                             td3.innerText = 1
                         } else if (niveau - niveauMin < 10) {
                             td3.innerText = 7;
@@ -457,7 +457,7 @@ jobs.addEventListener("change", function() {
                         // MINIMUM
                         let td2 = document.createElement("td");
                         let niveauMin = minLevelsBucheron[i];
-                        if (niveau - niveauMin == 0 && niveau === 200) {
+                        if (niveau - niveauMin == 0 && niveau == 200) {
                             td2.innerText = 1;
                         } else if (niveau < 30) {
                             td2.innerText = 1;
@@ -477,7 +477,7 @@ jobs.addEventListener("change", function() {
                         tr.appendChild(td2);
                         // MAXIMUM
                         let td3 = document.createElement("td");
-                        if (niveau - niveauMin == 0 && niveau === 200) {
+                        if (niveau - niveauMin == 0 && niveau == 200) {
                             td3.innerText = 1
                         } else if (niveau - niveauMin < 10) {
                             td3.innerText = 7;
@@ -588,7 +588,7 @@ jobs.addEventListener("change", function() {
                         // MINIMUM
                         let td2 = document.createElement("td");
                         let niveauMin = minLevelsMineur[i];
-                        if (niveau - niveauMin == 0 && niveau === 200) {
+                        if (niveau - niveauMin == 0 && niveau == 200) {
                             td2.innerText = 1;
                         } else if (niveau < 30) {
                             td2.innerText = 1;
@@ -608,7 +608,7 @@ jobs.addEventListener("change", function() {
                         tr.appendChild(td2);
                         // MAXIMUM
                         let td3 = document.createElement("td");
-                        if (niveau - niveauMin == 0 && niveau === 200) {
+                        if (niveau - niveauMin == 0 && niveau == 200) {
                             td3.innerText = 1
                         } else if (niveau - niveauMin < 10) {
                             td3.innerText = 7;
@@ -763,7 +763,7 @@ level.addEventListener("change", function() {
                     // MINIMUM
                     let td2 = document.createElement("td");
                     let niveauMin = minLevelsPaysan[i];
-                    if (niveau - niveauMin == 0 && niveau === 200) {
+                    if (niveau - niveauMin == 0 && niveau == 200) {
                         td2.innerText = 1;
                     } else if (niveau < 30) {
                         td2.innerText = 1;
@@ -783,7 +783,7 @@ level.addEventListener("change", function() {
                     tr.appendChild(td2);
                     // MAXIMUM
                     let td3 = document.createElement("td");
-                    if (niveau - niveauMin == 0 && niveau === 200) {
+                    if (niveau - niveauMin == 0 && niveau == 200) {
                         td3.innerText = 1
                     } else if (niveau - niveauMin < 10) {
                         td3.innerText = 7;
@@ -894,7 +894,7 @@ level.addEventListener("change", function() {
                         // MINIMUM
                         let td2 = document.createElement("td");
                         let niveauMin = minLevelsAlchimiste[i];
-                        if (niveau - niveauMin == 0 && niveau === 200) {
+                        if (niveau - niveauMin == 0 && niveau == 200) {
                             td2.innerText = 1;
                         } else if (niveau < 30) {
                             td2.innerText = 1;
@@ -914,7 +914,7 @@ level.addEventListener("change", function() {
                         tr.appendChild(td2);
                         // MAXIMUM
                         let td3 = document.createElement("td");
-                        if (niveau - niveauMin == 0 && niveau === 200) {
+                        if (niveau - niveauMin == 0 && niveau == 200) {
                             td3.innerText = 1
                         } else if (niveau - niveauMin < 10) {
                             td3.innerText = 7;
@@ -1025,7 +1025,7 @@ level.addEventListener("change", function() {
                         // MINIMUM
                         let td2 = document.createElement("td");
                         let niveauMin = minLevelsPecheur[i];
-                        if (niveau - niveauMin == 0 && niveau === 200) {
+                        if (niveau - niveauMin == 0 && niveau == 200) {
                             td2.innerText = 1;
                         } else if (niveau < 30) {
                             td2.innerText = 1;
@@ -1045,7 +1045,7 @@ level.addEventListener("change", function() {
                         tr.appendChild(td2);
                         // MAXIMUM
                         let td3 = document.createElement("td");
-                        if (niveau - niveauMin == 0 && niveau === 200) {
+                        if (niveau - niveauMin == 0 && niveau == 200) {
                             td3.innerText = 1
                         } else if (niveau - niveauMin < 10) {
                             td3.innerText = 7;
@@ -1156,7 +1156,7 @@ level.addEventListener("change", function() {
                         // MINIMUM
                         let td2 = document.createElement("td");
                         let niveauMin = minLevelsBucheron[i];
-                        if (niveau - niveauMin == 0  && niveau === 200) {
+                        if (niveau - niveauMin == 0  && niveau == 200) {
                             td2.innerText = 1;
                         } else if (niveau < 30) {
                             td2.innerText = 1;
@@ -1176,7 +1176,7 @@ level.addEventListener("change", function() {
                         tr.appendChild(td2);
                         // MAXIMUM
                         let td3 = document.createElement("td");
-                        if (niveau - niveauMin == 0 && niveau === 200) {
+                        if (niveau - niveauMin == 0 && niveau == 200) {
                             td3.innerText = 1
                         } else if (niveau - niveauMin < 10) {
                             td3.innerText = 7;
@@ -1287,7 +1287,7 @@ level.addEventListener("change", function() {
                         // MINIMUM
                         let td2 = document.createElement("td");
                         let niveauMin = minLevelsMineur[i];
-                        if (niveau - niveauMin == 0 && niveau === 200) {
+                        if (niveau - niveauMin == 0 && niveau == 200) {
                             td2.innerText = 1;
                         } else if (niveau < 30) {
                             td2.innerText = 1;
@@ -1307,7 +1307,7 @@ level.addEventListener("change", function() {
                         tr.appendChild(td2);
                         // MAXIMUM
                         let td3 = document.createElement("td");
-                        if (niveau - niveauMin == 0 && niveau === 200) {
+                        if (niveau - niveauMin == 0 && niveau == 200) {
                             td3.innerText = 1
                         } else if (niveau - niveauMin < 10) {
                             td3.innerText = 7;
