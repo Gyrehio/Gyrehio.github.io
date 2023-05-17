@@ -1,0 +1,34 @@
+<html lang='fr'>
+    <head>
+        <meta charset='UTF-8'/>
+        <title>Métiers de récolte - Dofus</title>
+        <html lang='fr'>
+        <link href='recoltes.css' rel='stylesheet' type='text/css'>
+        <script src="recoltes.js" defer></script>
+    </head>
+    <body>
+        <h1>Métiers de récolte - Dofus</h1>
+        <div class="box">
+            <div class="selector">
+                <div class="jobs">
+                    <form>
+                        <label>Métier : </label>
+                        <select name="metiers" id="metiers">
+                        <option value="Paysan">Paysan</option>
+                        <option value="Alchimiste">Alchimiste</option>
+                        <option value="Pêcheur">Pêcheur</option>
+                        <option value="Bûcheron">Bûcheron</option>
+                        <option value="Mineur">Mineur</option>
+                        </select>
+                    </form>
+                </div>
+                <div class="level">
+                    <label>Niveau : </label>
+                    <input type="number" id="niveau" value="1" min="1" max="200" step="1"/>
+                </div>
+            </div>
+            <div class="content">
+            </div>    
+        </div>
+    </body>
+</html>
