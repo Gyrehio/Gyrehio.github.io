@@ -1,7 +1,7 @@
 var ressourcesPaysan = ["Blé","Orge","Avoine","Houblon","Lin","Seigle","Riz","Malt","Chanvre","Maïs","Millet","Frostiz","Quisnoa"];
 var minLevelsPaysan = [0, 20, 40, 60, 80, 100, 100, 120, 140, 160, 180, 200, 200];
 var ressourcesAlchimiste = ["Ortie","Sauge","Trèfle à 5 feuilles","Menthe Sauvage","Orchidée Freyesque","Edelweiss","Graine de Pandouille","Ginseng","Belladone","Mandragore","Perce-Neige","Salikrone","Tulipe en Papier"];
-var minLevelsAlchimiste = [0, 20, 40, 60, 80, 100, 120, 140, 160, 180, 200, 200];
+var minLevelsAlchimiste = [0, 20, 40, 60, 80, 100, 120, 140, 160, 180, 200, 200, 200];
 var ressourcesPecheur = ["Goujon","Greuvette","Truite","Crabe Sourimi","Poisson-Chaton","Poisson Pané","Carpe d'Iem","Sardine Brillante","Brochet","Kralamoure","Anguille","Dorade Grise","Perche","Raie Bleue","Lotte","Requin Marteau-Faucille","Bar Rikain","Morue","Tanche","Espadon","Poiskaille","Patelle","Pichon d'Encre"];
 var minLevelsPecheur = [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150, 160, 170, 180, 190, 200, 200, 200];
 var ressourcesBucheron = ["Frêne","Chataîgnier","Noyer","Chêne","Bombu","Érable","Pin","Oliviolet","If","Bambou","Merisier","Noisetier","Ébène","Kalyptus","Charme","Bambou Sombre","Orme","Bambou Sacré","Tremble","Aquajou"];
