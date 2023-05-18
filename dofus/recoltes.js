@@ -1427,7 +1427,7 @@ save.addEventListener("click", function() {
                     if (storedPaysan) {
                         tabPaysan.push(storedPaysan[i]);
                     } else {
-                        tabPaysan.push("0");
+                        tabPaysan.push("1");
                     }
                 }
             }
@@ -1447,7 +1447,7 @@ save.addEventListener("click", function() {
                     if (storedAlchimiste) {
                         tabAlchimiste.push(storedAlchimiste[i]);
                     } else {
-                        tabAlchimiste.push("0");
+                        tabAlchimiste.push("1");
                     }
                 }
             }
@@ -1467,7 +1467,7 @@ save.addEventListener("click", function() {
                     if (storedPecheur) {
                         tabPecheur.push(storedPecheur[i]);
                     } else {
-                        tabPecheur.push("0");
+                        tabPecheur.push("1");
                     }
                 }
             }
@@ -1487,7 +1487,7 @@ save.addEventListener("click", function() {
                     if (storedBucheron) {
                         tabBucheron.push(storedBucheron[i]);
                     } else {
-                        tabBucheron.push("0");
+                        tabBucheron.push("1");
                     }
                 }
             }
@@ -1507,7 +1507,7 @@ save.addEventListener("click", function() {
                 if (storedMineur) {
                     tabMineur.push(storedMineur[i]);
                 } else {
-                    tabMineur.push("0");
+                    tabMineur.push("1");
                 }
             }
         }
